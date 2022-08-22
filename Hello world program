@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+printf("Hello \n World");  //here \n is an escape sequence that denote a new line character
+return 0;      /*The main function is generally supposed to return a value and after it returns something it finishes execution.
+                  The return 0 means success and returning a non-zero number means failure. Thus we "return 0" at the end of main function.*/
+}
