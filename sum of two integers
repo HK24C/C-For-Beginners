@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+/* Task- To print the sum of two integers
+> Declare two variables a,b as integers and sum to 0
+> scan the variables a,b to store the value for sum
+> add a+b and put in sum
+> print the sum to get desired output*/
+
+int main()
+{
+  int a,b,sum=0;
+  printf("enter the values of a and b");
+  scanf("%d %d",&a,&b);
+  sum=a+b;
+  printf("the sum is %d",sum);
+  
+  return 0;
+}  
