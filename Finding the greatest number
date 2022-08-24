@@ -1,0 +1,28 @@
+#include<stdio.h>
+/* Task - To print the greatest number among the three numbers 
+using if-else statement*/ 
+int main()
+{
+  //Declare the variables to store the value to be compared
+  int a, b, c;
+  scanf("%d%d%d",&a, &b, &c);//store the enterd values to int a,b,c
+
+  //use if statemnts to check the condition
+  
+  if((a>b)&&(a>c)) //check condition if a is greater than b and c. print the if statement
+  {
+    printf("The number %d is greatest", a);
+  }
+
+  if((b>a)&&(b>c))//check condition if b is greater than a and c. print the if statement
+  {
+    printf("the number %d is greatest",b);
+  }
+  
+  else//if the conditions of both avobe if statements fail to meet than print the else statement
+  {
+  printf("the number %d is greatest",c);
+  }
+
+return 0;//return the value to main function
+}
