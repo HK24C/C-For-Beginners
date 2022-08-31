@@ -1,0 +1,29 @@
+#include<stdio.h>
+/*Task- to check an integer to be plaindrome
+palindrome number: An integer is a plaindrome 
+if the reverse of that integer is equal to the original number*/ 
+
+int main()
+{
+  int n, reversed=0, remainder, original;//declaring the variables
+    printf("Enter an integer");
+    scanf("%d",&n);
+    original = n;
+
+    //reversed integer is stored in reversed variable
+    while(n != 0)
+    {
+        remainder = n%10;
+        reversed = reversed * 10 + remainder;
+        n /= 10;
+        
+    } 
+    
+    // integer is plaindrome if original and reversed are equal
+    if(original==reversed)
+        printf("%d is a plaindrome.\n",original);
+    else
+        printf("%d is not a plaindrome.\n",original);
+
+    return 0;
+}   
