@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    unsigned long long fact = 1;//To store large value of factorial
+
+    //To input the number whose factorial has to be found
+    printf("Enter the number:");
+    scanf("%d",&n);
+
+    /*if user input negative number shows error since 
+        factorial of negative number doesn't exists*/
+    if(n<0)
+        printf("Error! Factorial of a negative number doesn't exists.\n");
+
+    else
+        {
+            for(i=1; i<=n; ++i)
+            {
+                //formula to calculate factorial of a number
+                fact = fact*i;
+            }
+            printf("Factorial of %d = %llu", n, fact);
+        }
+    return 0;
+}
