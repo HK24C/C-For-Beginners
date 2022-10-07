@@ -1,0 +1,34 @@
+
+#include<stdio.h>
+//Printing the diamond pattern using stars(*)
+int main()
+{
+    int n, k, c;//Declaring the variables
+    printf("Enter the number of rows\n");
+    scanf("%d",&n);//To input the number of rows
+
+    //first loop for upper pyramid pattern
+    for(k=1; k<=n; k++)
+    {
+        for(c=1; c<=n-k; c++)
+        printf(" ");//for increasing space 
+
+        for(c=1; c<=2*k-1; c++)
+            printf("*");
+
+        printf("\n");
+    }
+    
+    //Second loop for reverse pyramdid pattern
+    for(k=1; k<=n-1; k++)
+    {
+        for(c=1; c<=k; c++)
+        printf(" ");
+        
+        for(c=1; c<=2*(n-k)-1; c++)
+            printf("*");
+
+        printf("\n");    
+    }
+    return 0;
+}
