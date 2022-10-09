@@ -1,0 +1,20 @@
+#include<stdio.h>
+//Finding Revrese of entered number using while loop 
+int main()
+{
+    int num,remainder,reverse = 0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    
+    //condition is false for num = 0
+    while(num != 0)
+    {
+        remainder = num % 10;// value of num is reduced by 10 times
+        reverse = reverse*10 + remainder;
+        num/=10;
+    }
+    printf("Reversed number is %d",reverse);//print the reversed number in output 
+
+    return 0;
+
+}
