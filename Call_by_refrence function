@@ -1,0 +1,25 @@
+#include<stdio.h>
+//swapping using call by refrence function
+
+void swap(int *, int *);//prototype of the function
+int main()
+{
+    int a=10;
+    int b=20;
+    //printing the value of a and b in main
+    printf("Before swapping the values in main a=%d, b=%d\n",a,b);
+    
+    swap(&a,&b);
+
+    /*The value of actual parameters do change in 
+    call by refrence,a=10,b=20*/
+    printf("After swapping values in main a=%d, b=%d\n",a,b);
+}
+void swap(int *a, int *b)
+{
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+    printf("After swapping values in function a=%d, b=%d\n",*a,*b);
+}
