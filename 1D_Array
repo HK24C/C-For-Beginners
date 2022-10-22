@@ -1,0 +1,22 @@
+#include<stdio.h>
+//program to display elements of 1D array
+int main()
+{
+    //Array decleration[]
+    int arr[5],i;
+    
+    printf("Enter array elements:\n");
+    //To input array elements 
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("\nDisplaying the elements of array:\n");
+    
+    //To print array elements
+    for(i=0;i<5;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+    return 0;
+}
