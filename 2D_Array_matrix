@@ -1,0 +1,29 @@
+#include<stdio.h>
+//To print matrix using 2d array
+
+int main()
+{
+    int i,j,a[3][3];
+    printf("Enter the elements of 2d array:\n");
+
+    for(i=0;i<3;i++) //outer loop process each row 
+    {
+        for(j=0;j<3;j++) //inner loop process each column
+        {
+        scanf("%d",&a[j][i]);
+        }
+    }
+    printf("Requried 2d array matrix:\n");
+    
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",a[j][i]);
+            if(j==2)
+                printf("\n");
+        }
+    
+    }
+    return 0;
+}
